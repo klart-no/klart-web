@@ -1,17 +1,19 @@
 "use client";
 
-// «Send forespørsel» til en DJ (og senere fotograf): velg dato, fyll inn, send.
+// «Send forespørsel» til en DJ eller fotograf: velg dato, fyll inn, send.
 // Gjenbruker kalenderen fra lokalsiden – opptatte dager kommer fra leverandørens kalender.
 import { useState } from "react";
 import BookingCalendar from "@/components/venue-page/BookingCalendar";
 import { formatDate } from "@/lib/format";
 
 type Props = {
-  vendorType: "dj"; // utvides med "fotograf"
+  vendorType: "dj" | "fotograf";
   vendorSlug: string;
   vendorName: string;
   unavailable: string[];
   initialDate?: string;
+  packages?: string[]; // fotografer: «Ønsket pakke»
+  messageHint?: string;
 };
 
 const input = "w-full rounded-lg border border-stone-300 px-3 py-2";
@@ -84,6 +86,14 @@ export default function RequestForm(props: Props) {
           <option>Firmafest</option>
           <option>Annet</option>
         </select>
+        {props.packages && (
+          <select name="package" className={input} defaultValue="">
+            <option value="">Ønsket pakke (valgfritt)</option>
+            {props.packages.map((p) => (
+              <option key={p}>{p}</option>
+            ))}
+          </select>
+        )}
         <input name="name" required placeholder="Navn" className={input} />
         <input
           name="email"
@@ -95,7 +105,9 @@ export default function RequestForm(props: Props) {
         <textarea
           name="message"
           rows={3}
-          placeholder="Sted, antall gjester, ønsket musikk"
+          placeholder={
+            props.messageHint ?? "Sted, antall gjester, ønsket musikk"
+          }
           className={input}
         />
       </div>

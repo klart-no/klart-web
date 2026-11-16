@@ -12,14 +12,18 @@ const label = "text-sm font-medium text-stone-600";
 export default function VendorFilterForm({
   action,
   search,
+  priceOptions = PRICE_OPTIONS,
+  children,
 }: {
   action: string; // f.eks. "/dj"
   search: VendorSearch;
+  priceOptions?: { value: string; label: string }[];
+  children?: React.ReactNode; // ekstra filtre, f.eks. stil for fotografer
 }) {
   return (
     <form
       action={action}
-      className="grid gap-3 rounded-2xl bg-white p-4 shadow-sm sm:grid-cols-[1fr_1fr_1fr_auto]"
+      className="grid gap-3 rounded-2xl bg-white p-4 shadow-sm sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col"
     >
       <label className={label}>
         Sted
@@ -42,7 +46,7 @@ export default function VendorFilterForm({
           defaultValue={search.maxPrice ? String(search.maxPrice) : ""}
           className={field}
         >
-          {PRICE_OPTIONS.map((o) => (
+          {priceOptions.map((o) => (
             <option key={o.value} value={o.value}>
               {o.label}
             </option>
@@ -60,6 +64,8 @@ export default function VendorFilterForm({
           className={field}
         />
       </label>
+
+      {children}
 
       <button className="self-end rounded-lg bg-rose-500 px-8 py-3 font-semibold text-white hover:bg-rose-600">
         Søk

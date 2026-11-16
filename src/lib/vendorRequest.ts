@@ -1,11 +1,13 @@
-// Validering av forespørsler til DJ-er (og senere fotografer). Brukes av /api/foresporsel.
+// Validering av forespørsler til DJ-er og fotografer. Brukes av /api/foresporsel.
 import { getDj } from "./djs";
+import { getPhotographer } from "./photographers";
 
 export type VendorRequest = {
-  vendorType: "dj";
+  vendorType: "dj" | "fotograf";
   vendorSlug: string;
   eventDate: string;
   eventType: string;
+  package: string;
   name: string;
   email: string;
   message: string;
@@ -21,13 +23,16 @@ export function validateVendorRequest(body: unknown): Result {
   const b = body as Record<string, unknown>;
   const str = (k: string) => String(b[k] ?? "").trim();
 
-  if (str("vendorType") !== "dj")
+  const vendorType = str("vendorType");
+  if (vendorType !== "dj" && vendorType !== "fotograf") {
     return { ok: false, error: "Ukjent type leverandør" };
+  }
   const data: VendorRequest = {
-    vendorType: "dj",
+    vendorType,
     vendorSlug: str("vendorSlug"),
     eventDate: str("eventDate"),
     eventType: str("eventType"),
+    package: str("package"),
     name: str("name"),
     email: str("email"),
     message: str("message"),
@@ -39,7 +44,9 @@ export function validateVendorRequest(body: unknown): Result {
   return { ok: true, data };
 }
 
-// Finner leverandøren forespørselen gjelder (utvides med fotograf).
+// Finner leverandøren forespørselen gjelder.
 export function findVendor(request: VendorRequest) {
-  return getDj(request.vendorSlug);
+  return request.vendorType === "dj"
+    ? getDj(request.vendorSlug)
+    : getPhotographer(request.vendorSlug);
 }
