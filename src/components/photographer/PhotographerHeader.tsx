@@ -29,7 +29,7 @@ export default function PhotographerHeader({ p }: { p: Photographer }) {
           {tags.map((t) => (
             <span
               key={t}
-              className="rounded-full bg-rose-100 px-3 py-1 text-sm text-rose-700"
+              className="rounded-full bg-gold-100 px-3 py-1 text-sm text-gold-700"
             >
               {t}
             </span>

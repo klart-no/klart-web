@@ -101,10 +101,10 @@ function DayButton({
 }) {
   const base = "aspect-square rounded-lg text-sm";
   const style = selected
-    ? "bg-rose-500 font-semibold text-white"
+    ? "bg-navy-900 font-semibold text-white"
     : disabled
       ? `text-stone-300 ${booked ? "line-through" : ""}`
-      : "hover:bg-rose-100";
+      : "hover:bg-gold-100";
 
   return (
     <button

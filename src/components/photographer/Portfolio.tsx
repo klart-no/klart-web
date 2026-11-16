@@ -53,7 +53,7 @@ export default function Portfolio({
               role="tab"
               aria-selected={tab === t.id}
               onClick={() => setTab(t.id)}
-              className={`rounded-full border px-5 py-2.5 ${tab === t.id ? "border-stone-900 bg-stone-900 font-semibold text-white" : "border-stone-300 bg-white"}`}
+              className={`rounded-full border px-5 py-2.5 ${tab === t.id ? "border-navy-900 bg-navy-900 font-semibold text-white" : "border-stone-300 bg-white"}`}
             >
               {t.label} ({t.count})
             </button>

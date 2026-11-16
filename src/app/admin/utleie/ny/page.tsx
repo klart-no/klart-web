@@ -10,7 +10,7 @@ export default function NewRentalProductPage() {
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       <div>
-        <p className="text-sm font-semibold text-rose-700">
+        <p className="text-sm font-semibold text-gold-700">
           Admin · kun for oss
         </p>
         <h1 className="text-3xl font-bold">Legg til utleieprodukt</h1>

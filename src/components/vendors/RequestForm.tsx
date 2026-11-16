@@ -114,7 +114,7 @@ export default function RequestForm(props: Props) {
       {error && <p className="text-sm text-red-600">{error}</p>}
       <button
         disabled={!date || status === "sending"}
-        className="w-full rounded-lg bg-rose-500 py-3 font-semibold text-white hover:bg-rose-600 disabled:opacity-40"
+        className="w-full rounded-lg bg-navy-900 py-3 font-semibold text-white hover:bg-navy-700 disabled:opacity-40"
       >
         {status === "sending"
           ? "Sender…"

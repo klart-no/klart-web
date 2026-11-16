@@ -14,7 +14,7 @@ export default function ProgressBar({
       {Array.from({ length: total }, (_, i) => (
         <div
           key={i}
-          className={`h-1.5 rounded-full ${i <= current ? "bg-rose-600" : "bg-stone-200"}`}
+          className={`h-1.5 rounded-full ${i <= current ? "bg-navy-900" : "bg-stone-200"}`}
         />
       ))}
     </div>

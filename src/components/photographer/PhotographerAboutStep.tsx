@@ -72,7 +72,7 @@ export default function PhotographerAboutStep() {
                 type="button"
                 aria-pressed={on}
                 onClick={() => toggle(s)}
-                className={`rounded-full border px-4 py-2 text-sm ${on ? "border-rose-500 bg-rose-50 font-semibold text-rose-800" : "border-stone-300 bg-white"}`}
+                className={`rounded-full border px-4 py-2 text-sm ${on ? "border-gold-500 bg-gold-50 font-semibold text-gold-800" : "border-stone-300 bg-white"}`}
               >
                 {s}
               </button>

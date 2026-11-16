@@ -19,7 +19,7 @@ export default async function DjProfilePage({ params, searchParams }: Props) {
 
   return (
     <div className="space-y-8">
-      <Link href="/dj" className="text-sm text-stone-500 hover:text-stone-900">
+      <Link href="/dj" className="text-sm text-stone-500 hover:text-navy-950">
         ← Tilbake til alle DJ-er
       </Link>
       <MediaGallery media={dj.media} />

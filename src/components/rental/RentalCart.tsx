@@ -119,7 +119,7 @@ export default function RentalCart({
       {error && <p className="text-sm text-red-600">{error}</p>}
       <button
         disabled={empty || status === "sending"}
-        className="w-full rounded-lg bg-rose-600 py-3 font-semibold text-white hover:bg-rose-700 disabled:bg-stone-400"
+        className="w-full rounded-lg bg-navy-900 py-3 font-semibold text-white hover:bg-navy-700 disabled:bg-stone-400"
       >
         {status === "sending"
           ? "Sender…"

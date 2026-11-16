@@ -9,13 +9,13 @@ export default function CategoryGrid() {
         <Link
           key={item.href}
           href={item.children ? item.children[0].href : item.href}
-          className="group rounded-2xl bg-white p-6 shadow-sm transition hover:shadow-md"
+          className="group rounded-2xl border border-transparent bg-white p-6 shadow-sm transition hover:border-gold-300 hover:shadow-md"
         >
-          <h2 className="text-lg font-semibold group-hover:text-rose-600">
+          <h2 className="text-lg font-semibold group-hover:text-gold-700">
             {item.label}
           </h2>
           <p className="mt-1 text-sm text-stone-500">{item.description}</p>
-          <span className="mt-4 inline-block text-sm font-medium text-rose-600">
+          <span className="mt-4 inline-block text-sm font-medium text-gold-700">
             Utforsk →
           </span>
         </Link>

@@ -41,7 +41,7 @@ export default function PhotographerCv({ p }: { p: Photographer }) {
                 href={p.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-rose-700 underline"
+                className="text-gold-700 underline"
               >
                 Besøk nettside
               </a>

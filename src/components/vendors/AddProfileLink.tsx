@@ -11,7 +11,7 @@ export default function AddProfileLink({
   return (
     <Link
       href={href}
-      className="inline-flex items-center gap-2 rounded-full bg-stone-900 px-5 py-3 text-sm font-semibold text-white hover:bg-stone-700"
+      className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-5 py-3 text-sm font-semibold text-white hover:bg-navy-700"
     >
       <span aria-hidden="true">+</span> {label}
     </Link>
