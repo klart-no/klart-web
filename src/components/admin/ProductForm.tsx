@@ -135,7 +135,7 @@ export default function ProductForm() {
         </p>
       )}
       <div className="flex justify-end">
-        <button className="rounded-lg bg-rose-600 px-6 py-3 font-semibold text-white hover:bg-rose-700">
+        <button className="rounded-lg bg-navy-900 px-6 py-3 font-semibold text-white hover:bg-navy-700">
           Publiser
         </button>
       </div>

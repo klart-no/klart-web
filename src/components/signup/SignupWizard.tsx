@@ -35,7 +35,7 @@ export default function SignupWizard({
   return (
     <div className="space-y-6">
       <div>
-        <p className="text-sm font-semibold text-rose-700">
+        <p className="text-sm font-semibold text-gold-700">
           Steg {index + 1} av {steps.length}
         </p>
         <h1 className="mt-1 text-3xl font-bold">{step.title}</h1>
@@ -63,7 +63,7 @@ export default function SignupWizard({
         <button
           type="button"
           onClick={() => (isLast ? setDone(true) : setIndex(index + 1))}
-          className="rounded-lg bg-rose-600 px-6 py-3 font-semibold text-white hover:bg-rose-700"
+          className="rounded-lg bg-navy-900 px-6 py-3 font-semibold text-white hover:bg-navy-700"
         >
           {isLast ? "Send inn profil" : "Neste"}
         </button>

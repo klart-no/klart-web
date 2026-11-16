@@ -14,7 +14,7 @@ export default function VenueDetails({ venue }: { venue: Venue }) {
         {venue.eventTypes.map((t) => (
           <span
             key={t}
-            className="rounded-full bg-rose-100 px-3 py-1 text-sm text-rose-700"
+            className="rounded-full bg-gold-100 px-3 py-1 text-sm text-gold-700"
           >
             {t}
           </span>

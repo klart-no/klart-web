@@ -14,7 +14,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="nb">
-      <body className="bg-stone-50 text-stone-900 antialiased">
+      <body className="bg-ivory text-navy-950 antialiased">
         <Header />
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
         <Footer />

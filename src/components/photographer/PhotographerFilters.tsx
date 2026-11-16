@@ -4,7 +4,7 @@ import { SERVICE_LABELS, STYLES } from "@/lib/photographers";
 import type { PhotographerSearch } from "@/types/photographer";
 
 const field =
-  "w-full rounded-lg border border-stone-300 bg-white px-3 py-3 focus:border-rose-400 focus:outline-none";
+  "w-full rounded-lg border border-stone-300 bg-white px-3 py-3 focus:border-gold-500 focus:outline-none";
 const label = "text-sm font-medium text-stone-600";
 
 export default function PhotographerFilters({

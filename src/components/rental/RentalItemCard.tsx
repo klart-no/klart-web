@@ -63,7 +63,7 @@ export default function RentalItemCard({ item, picked, onToggle }: Props) {
               className={`rounded-lg px-4 py-2.5 text-sm font-semibold ${
                 picked
                   ? "border border-green-800 bg-green-100 text-green-800"
-                  : "bg-rose-600 text-white hover:bg-rose-700"
+                  : "bg-navy-900 text-white hover:bg-navy-700"
               }`}
             >
               {picked ? "Lagt til ✓" : "Legg til"}

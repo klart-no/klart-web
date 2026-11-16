@@ -15,7 +15,7 @@ export default function MainMenu() {
       <button
         onClick={() => setOpen(true)}
         aria-label="Åpne meny"
-        className="flex items-center gap-2 rounded-full border border-stone-300 px-4 py-2 text-sm font-medium hover:bg-stone-100"
+        className="flex items-center gap-2 rounded-full border border-gold-400/60 px-4 py-2 text-sm font-medium text-gold-100 hover:bg-white/10"
       >
         <span className="text-lg leading-none">☰</span> Meny
       </button>

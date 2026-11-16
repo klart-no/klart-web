@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
+/* Fargene er hentet fra logoen: dyp marineblå og dempet gull på en varm, lys bakgrunn.
+   Endre en farge her, så endres den overalt. */
+@theme {
+  --color-navy-950: #050b17; /* logoens bakgrunn */
+  --color-navy-900: #0b1526;
+  --color-navy-800: #13213a;
+  --color-navy-700: #1e3050;
+  --color-navy-600: #2f4468;
+
+  --color-gold-50: #fbf8f1;
+  --color-gold-100: #f4ecd9;
+  --color-gold-200: #e8d8b0; /* logoens gull */
+  --color-gold-300: #d9c38c;
+  --color-gold-400: #c9ae78;
+  --color-gold-500: #b3945a;
+  --color-gold-700: #75602f; /* mørk nok til tekst på lys bakgrunn */
+  --color-gold-800: #594924;
+
+  --color-ivory: #faf8f3; /* sidens bakgrunn */
+
+  --font-serif: Georgia, "Times New Roman", serif;
+}
+
 body {
   font-family:
     ui-sans-serif,
@@ -8,4 +31,16 @@ body {
     "Segoe UI",
     Roboto,
     sans-serif;
+}
+
+/* Overskrifter i serif, som bokstavene i logoen. */
+h1,
+h2 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+/* Myker opp kantene på logobildet så det glir inn i toppfeltet. */
+.logo-blend {
+  mask-image: radial-gradient(ellipse at center, #000 62%, transparent 100%);
 }

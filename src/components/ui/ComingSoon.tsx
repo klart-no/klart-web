@@ -17,7 +17,7 @@ export default function ComingSoon({
       <p className="mt-3 text-stone-600">{description}</p>
       <Link
         href="/selskapslokaler"
-        className="mt-8 inline-block rounded-lg bg-rose-500 px-5 py-3 font-semibold text-white hover:bg-rose-600"
+        className="mt-8 inline-block rounded-lg bg-navy-900 px-5 py-3 font-semibold text-white hover:bg-navy-700"
       >
         Se selskapslokaler i mellomtiden
       </Link>

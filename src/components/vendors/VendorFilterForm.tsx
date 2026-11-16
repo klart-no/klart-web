@@ -6,7 +6,7 @@ import { PRICE_OPTIONS } from "@/lib/vendors";
 import type { VendorSearch } from "@/types/vendor";
 
 const field =
-  "w-full rounded-lg border border-stone-300 bg-white px-3 py-3 focus:border-rose-400 focus:outline-none";
+  "w-full rounded-lg border border-stone-300 bg-white px-3 py-3 focus:border-gold-500 focus:outline-none";
 const label = "text-sm font-medium text-stone-600";
 
 export default function VendorFilterForm({
@@ -67,7 +67,7 @@ export default function VendorFilterForm({
 
       {children}
 
-      <button className="self-end rounded-lg bg-rose-500 px-8 py-3 font-semibold text-white hover:bg-rose-600">
+      <button className="self-end rounded-lg bg-navy-900 px-8 py-3 font-semibold text-white hover:bg-navy-700">
         Søk
       </button>
     </form>

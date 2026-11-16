@@ -22,7 +22,7 @@ export default async function VenuePage({ params, searchParams }: Props) {
     <div className="space-y-8">
       <Link
         href="/selskapslokaler"
-        className="text-sm text-stone-500 hover:text-stone-900"
+        className="text-sm text-stone-500 hover:text-navy-950"
       >
         ← Tilbake til alle lokaler
       </Link>

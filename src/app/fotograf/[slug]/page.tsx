@@ -28,7 +28,7 @@ export default async function PhotographerProfilePage({
     <div className="space-y-8">
       <Link
         href="/fotograf"
-        className="text-sm text-stone-500 hover:text-stone-900"
+        className="text-sm text-stone-500 hover:text-navy-950"
       >
         ← Tilbake til alle fotografer
       </Link>
