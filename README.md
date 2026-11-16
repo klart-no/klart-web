@@ -26,6 +26,9 @@ npm run dev
 | `src/components/home/` | Forsiden |
 | `src/components/venues/` | Søk og resultatliste (inkl. bildebytte ved hover) |
 | `src/components/venue-page/` | Siden for ett lokale: bilder, detaljer, anmeldelser, utleier, kalender, skjema |
+| `src/components/dj/` | DJ-kort, DJ-profil og DJ-ens eget registreringssteg |
+| `src/components/vendors/` | Felles for DJ og fotograf: filter, bildegalleri, forespørselsskjema |
+| `src/components/signup/` | Felles registreringsveiviser (konto, bilder/video, kalender, send inn) |
 | `src/components/ui/` | Små felles byggeklosser |
 
 ## Sider
@@ -33,7 +36,10 @@ npm run dev
 - `/` – forside
 - `/selskapslokaler` – søk på region, dato og gjester
 - `/selskapslokaler/[navn]` – lokale med befaringskalender
-- `/dj`, `/fotograf`, `/utstyr/*`, `/bryllupskort` – «Kommer snart»
+- `/dj` – DJ-liste med filter på sted, pris og ledig dato
+- `/dj/[navn]` – DJ-profil med bilder, video, anmeldelser og forespørsel
+- `/dj/registrer` – «Legg til din profil i DJ-listen» (5 steg)
+- `/fotograf`, `/utstyr/*`, `/bryllupskort` – «Kommer snart»
 
 ## Legge til et lokale
 
