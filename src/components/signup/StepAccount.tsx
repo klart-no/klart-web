@@ -1,7 +1,12 @@
 import { fieldClass, labelClass } from "@/components/ui/formStyles";
 
 // Steg 1: opprett bruker. Selve innloggingen kobles på når Supabase er på plass.
-export default function StepAccount() {
+// rightsNotice: fotografer bekrefter også at de eier rettighetene til bildene og videoene.
+export default function StepAccount({
+  rightsNotice = false,
+}: {
+  rightsNotice?: boolean;
+}) {
   return (
     <>
       <button
@@ -28,6 +33,8 @@ export default function StepAccount() {
         <input type="checkbox" name="terms" className="mt-0.5 h-5 w-5" />
         Jeg godtar vilkårene og at profilen min vises offentlig på
         NordicOccasions
+        {rightsNotice &&
+          ", og bekrefter at jeg har rettighetene til bildene og videoene jeg laster opp"}
       </label>
     </>
   );
