@@ -28,6 +28,8 @@ npm run dev
 | `src/components/venue-page/` | Siden for ett lokale: bilder, detaljer, anmeldelser, utleier, kalender, skjema |
 | `src/components/dj/` | DJ-kort, DJ-profil og DJ-ens eget registreringssteg |
 | `src/components/photographer/` | Fotograf-kort, portefølje, CV, pakker og fotografens egne registreringssteg |
+| `src/components/rental/` | Leie av utstyr: kategorivalg, produktkort med spesifikasjoner og handlekurv |
+| `src/components/admin/` | Admin-skjema for egne utleieprodukter (ikke beskyttet ennå) |
 | `src/components/vendors/` | Felles for DJ og fotograf: filter, bildegalleri, forespørselsskjema |
 | `src/components/signup/` | Felles registreringsveiviser (konto, bilder/video, kalender, send inn) |
 | `src/components/ui/` | Små felles byggeklosser |
@@ -43,7 +45,9 @@ npm run dev
 - `/fotograf` – fotograf-liste med filter på sted, pris, dato, tjeneste og stil
 - `/fotograf/[navn]` – profil med portefølje (bilder, filmer, hele bryllup), CV, pakker og forespørsel
 - `/fotograf/registrer` – «Legg til din profil i fotograf-listen» (7 steg)
-- `/utstyr/*`, `/bryllupskort` – «Kommer snart»
+- `/utstyr/[kategori]` – leie av fotoboks, fotovegg, bryllupsbil og annet, med samlet forespørsel
+- `/admin/utleie/ny` – legg til eget utleieprodukt (må bak innlogging før lansering)
+- `/bryllupskort` – «Kommer snart»
 
 ## Legge til et lokale
 

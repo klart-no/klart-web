@@ -29,9 +29,10 @@ export const navigation: NavItem[] = [
     href: "/utstyr",
     description: "Fotoboks, bryllupsbil og mer",
     children: [
-      { label: "Leie av fotoboks og fotovegg", href: "/utstyr/fotoboks" },
-      { label: "Leie av bryllupsbil", href: "/utstyr/bryllupsbil", wip: true },
-      { label: "Annet", href: "/utstyr/annet" },
+      { label: "Fotoboks", href: "/utstyr/fotoboks" },
+      { label: "Fotovegg og rekvisitter", href: "/utstyr/fotovegg" },
+      { label: "Bryllupsbil", href: "/utstyr/bryllupsbil" },
+      { label: "Annet utstyr", href: "/utstyr/annet" },
     ],
   },
   {
